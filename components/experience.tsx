@@ -9,6 +9,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
 
+
 export default function Experience() {
   const { ref, inView } = useSectionInView("Experience", 0.2);
   const { theme } = useTheme();
@@ -47,7 +48,6 @@ export default function Experience() {
               
             
               <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>

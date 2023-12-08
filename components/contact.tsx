@@ -25,17 +25,15 @@ export default function Contact() {
       transition={{
         duration: 1,
       }}
-      viewport={{
-        once: true,
-      }}
+     
     >
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
+       You can contact me by email: {" "}
         <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
-        </a>{" "}
+        abdurrofii.aas@gmail.com
+        </a> {" "}
         or through this form.
       </p>
 
@@ -48,8 +46,8 @@ export default function Contact() {
             toast.error(error);
             return;
           }
-
           toast.success("Email sent successfully!");
+          window.location.reload();
         }}
       >
         <input
