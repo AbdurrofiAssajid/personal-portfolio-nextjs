@@ -97,7 +97,7 @@ export const skillsData = [
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Reddis",
+  "Redis",
   "Express",
   "PostgreSQL",
   "Python",
