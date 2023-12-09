@@ -36,22 +36,25 @@ export const links = [
 export const experiencesData = [
   {
     title: "Learning Web Development",
+    location:"kelasfullstack, dicoding indonesia", 
     description:
-      "I started learning web development by taking online and offline course ",
+      "I started learning web development by taking online and offline course, learned about UI/UX design and SDLC (software development life cycle)",
     icon: React.createElement(GiWhiteBook),
     date: "2022",
   },
   {
-    title: "Started building apps",
+    title: "Started building web app project",
+    location:"next js, react js", 
     description:
-      "My first apps is portfolio website, to-do checklist, and book management ",
+      "My first apps is portfolio website, to-do checklist, book management and also implenting sending email with resend API",
     icon: React.createElement(PiQrCodeFill), 
     date: "2023",
   },
   {
     title: "Became Full-Stack Developer",
+    location:"web developer", 
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer working as a freelancer. My tech stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(TbBrandReactNative),
     date: "2024 - present",
   },
