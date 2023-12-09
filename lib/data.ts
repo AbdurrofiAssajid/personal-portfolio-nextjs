@@ -44,7 +44,7 @@ export const experiencesData = [
   {
     title: "Started building apps",
     description:
-      "My first apps is portfolio website, to-do checklist , and book management ",
+      "My first apps is portfolio website, to-do checklist, and book management ",
     icon: React.createElement(PiQrCodeFill), 
     date: "2023",
   },
