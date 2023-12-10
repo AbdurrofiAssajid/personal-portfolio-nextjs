@@ -45,8 +45,13 @@ export default function Contact() {
           if (error) {
             toast.error(error);
             return;
+          } else {
+            toast.success("Email sent successfully!");
+            setTimeout(function() {
+              location.reload();
+            }, 1000);
           }
-          toast.success("Email sent successfully!");      
+                
         }
       }
       >
