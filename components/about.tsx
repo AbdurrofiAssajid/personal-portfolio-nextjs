@@ -19,22 +19,29 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-      Apart from learning general subjects at school, I spend my time learning computers,
-        <span className="font-medium"> especially in software development,</span> and since then my hobby has been making computer programs.
-        Even though I have only been learning software development for less than 6 months,
-        <span className="font-medium"> I have already won a prestigious competition held by BINUS,</span>
-        <span className="font-bold"> namely SDLC </span> <span className="italic">(Software Development Life Cycle), </span> 
-        <span className="font-medium"> apart from that I also won other</span>
-        <span className="underline">{" "} informatics competitions </span>{" "} which are also on a national scale.
-        <span className="font-medium"> And last but not least I am proficient in two international languages, there are Arabic and English</span>
+        After graduating from senior high school of{" "}
+        <span className="font-medium">Science</span>, I decided to pursue my interest 
+        {" "} in programming. I took  a coding course and learned{" "}
+        <span className="font-medium">full-stack web development</span>.{" "}
+        <span className="italic">My favorite part of programming</span> is the
+        problem-solving aspect. I <span className="underline">love</span> the feeling of finally finding a solution to a problem. My core stack
+        is{" "}
+        <span className="font-medium">
+          MERN
+        </span>
+        . I am also familiar with TypeScript and Prisma. I always want to
+        learn new technologies. I am currently looking for a{" "}
+        <span className="font-medium">full-time position</span> as a software
+        developer.
       </p>
 
       <p>
-        <span className="font-bold"> My dream is to establish a start-up in the technology sector </span>that will become big companies like Google and Meta.
-        <span className="font-medium"> Although it may sound impossible, I will make it possible</span>. Because, for me there is nothing that is impossible to achieve,
-        <span className="font-medium"> except with intention and great effort.</span> One of the sentences that really motivates me when Mark Zuckerberg said, 
-        <span className="italic"> "Don't wait your idea to become perfect, start and make your idea become perfect. Because you just have to get start it"</span> 
-          
+        <span className="italic">When I'm not coding</span>, I enjoy playing
+        video games, and watching movies. {" "} I also enjoy{" "}
+        <span className="font-medium">learning new things</span>. I am currently{" "}
+        learning about{" "}
+        <span className="font-medium">UX design</span>. I'm also
+        learning how to make a great Saas <span className="italic"> (Software as a Service) </span>.
       </p>
     </motion.section>
   );

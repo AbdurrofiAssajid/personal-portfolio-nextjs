@@ -11,6 +11,7 @@ export default function Footer() {
         React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
         Framer Motion, React Email & Resend, Vercel hosting.
       </p>
+      {" "}
       <p className="text-xs italic font-bold">
         <a href="https://abdurrofi-3d-portfolio.vercel.app/"
           target="_blank">
