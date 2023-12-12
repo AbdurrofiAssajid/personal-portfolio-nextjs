@@ -35,7 +35,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Learning Web Development",
+    title: "Learned Web Development",
     month:"january-october", 
     description:
       "I started learning web development by taking online and offline course, learned about Programming & hypertext languages, UI/UX design and SDLC (software development life cycle)",
@@ -43,10 +43,10 @@ export const experiencesData = [
     date: "2023",
   },
   {
-    title: "Started building web app project",
+    title: "built web app project",
     month:"november-december", 
     description:
-      "My first apps is portfolio website, to-do checklist, book management and also implenting sending email with resend API",
+      "My first apps is portfolio website, to-do checklist, book management and also implenting sending email",
     icon: React.createElement(PiQrCodeFill), 
     date: "2023",
   },
