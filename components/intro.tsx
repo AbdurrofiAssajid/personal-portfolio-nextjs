@@ -34,9 +34,9 @@ export default function Intro() {
               src="/about.jpeg"
               alt="Abdurrofi portrait"
               width="192"
-              loading="lazy"
               height="192"
               quality="95"
+              priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
