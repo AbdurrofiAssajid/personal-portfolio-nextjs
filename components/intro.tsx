@@ -34,6 +34,7 @@ export default function Intro() {
               src="/about.jpeg"
               alt="Abdurrofi portrait"
               width="192"
+              loading="lazy"
               height="192"
               quality="95"
               priority={true}
