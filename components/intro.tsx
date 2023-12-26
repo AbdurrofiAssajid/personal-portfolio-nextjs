@@ -8,11 +8,24 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useTypewriter } from 'react-simple-typewriter'
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [text] = useTypewriter({
+    words: [
+        "'m Abdurrofi Assajid",
+        "'m Software Developer",
+        " have 1 year of experience",
+    ],
+    loop: true,
+    delaySpeed: 2000,
+    typeSpeed: 50,
+    deleteSpeed: 50
+});
+
 
   return (
     <section
@@ -62,10 +75,8 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Abdurrofi.</span> I'm a{" "}
-        <span className="font-medium">student of senior high school.</span> 
-        <span className="font-bold"> Welcome to my portfolio website.</span>
-        <span className="font-small"> Hope you enjoy it </span>     
+        <span className="font-bold italic pb-5">I</span> 
+        <span className="font-bold italic pb-5">{text}</span>     
       </motion.h1>
 
       <motion.div
