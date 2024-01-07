@@ -45,8 +45,8 @@ export default function Reviews() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize text-blue-700 dark:text-yellow-300">{item.title}</h3>
-              <p className="font-normal !mt-0 text-gray-500 dark:text-white/40 italic">{item.month}</p>
+              <h3 className="font-semibold capitalize text-blue-700 dark:text-yellow-300">{item.name}</h3>
+              <p className="font-normal !mt-0 text-gray-500 dark:text-white/40 italic">{item.job}</p>
               <p className="!mt-1 !font-normal text-gray-900 dark:text-white">
                 {item.description}
               </p>
