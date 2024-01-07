@@ -33,12 +33,12 @@ export default function Intro() {
           >
             <Image
               src="/intro.jpg"
-              alt="Abdurrofi portrait"
+              alt="Islamic Law Consultation corp logo"
               width="300"
               height="300"
-              quality="100"
+              quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-blue-800 dark:border-yellow-400 shadow-xl"
             />
           </motion.div>
 
@@ -78,7 +78,7 @@ export default function Intro() {
       >
         <Link
           href="#consult"
-          className="group bg-blue-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-blue-900 active:scale-105 transition dark:bg-yellow-300 dark:text-gray-900 font-bold"
+          className="group bg-blue-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-blue-900 active:scale-105 transition dark:bg-yellow-300 dark:text-gray-900 font-bold dark:hover:bg-yellow-400"
           onClick={() => {
             setActiveSection("Consult");
             setTimeOfLastClick(Date.now());
@@ -89,7 +89,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-gray-900 dark:text-yellow-300"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-gray-900 dark:text-yellow-300 dark:hover:bg-black"
           href="/tech.pdf"
           download
         >
@@ -98,7 +98,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-gray-900 p-4 text-white hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-gray-900 dark:text-yellow-300"
+          className="bg-gray-950 p-4 text-white hover:text-white flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-gray-900 dark:text-yellow-300 dark:hover:text-yellow-400"
           href="https://www.facebook.com/"
           target="_blank"
         >
@@ -106,7 +106,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="text-white p-4 bg-gray-900 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-gray-900 dark:text-yellow-300"
+          className="text-white p-4 bg-gray-900 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-white active:scale-105 transition cursor-pointer borderBlack dark:bg-gray-900 dark:text-yellow-300 dark:hover:text-yellow-400"
           href="https://www.instagram.com/"   
           target="_blank"     
         >

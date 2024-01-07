@@ -61,12 +61,13 @@ export const reviewsData = [
 ] as const;
 
 export const benefitsData = [
+  'Trusted',
   "Friendly services",
   'Free consult for students',
   'Paylater',
   '100% refund guarantee',
   'Online & Offline service',
-  'Guided by Professional employee',
+  'Guided by Professional consultant',
   'Intensive Counsultation'
 ] as const;
 
