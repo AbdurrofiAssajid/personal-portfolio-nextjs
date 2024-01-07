@@ -4,9 +4,10 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -31,18 +32,18 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/about.jpeg"
+              src="/intro.jpg"
               alt="Abdurrofi portrait"
-              width="192"
-              height="192"
-              quality="95"
+              width="300"
+              height="300"
+              quality="100"
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-0 right-0 text-3xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -52,7 +53,7 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            👋
+        🤔
           </motion.span>
         </div>
       </div>
@@ -62,10 +63,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Abdurrofi.</span> I'm a{" "}
-        <span className="font-medium">student of senior high school.</span> 
-        <span className="font-bold"> Welcome to my portfolio website.</span>
-        <span className="font-small"> Hope you enjoy it </span>     
+       <span className="font-bold">Confused About</span>
+        <span className=" text-blue-700 font-bold dark:text-yellow-300"> Islamic law? </span> {' '}
+        <span className="font-bold"> {' '} We're Ready to Help You</span>
       </motion.h1>
 
       <motion.div
@@ -78,39 +78,39 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-blue-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-blue-900 active:scale-105 transition dark:bg-yellow-300 dark:text-gray-900 font-bold"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection("Consult");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          Consult Now{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition text-white dark:text-black" />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-gray-900 dark:text-yellow-300"
+          href="/tech.pdf"
           download
         >
-          Download CV{" "}
+          Download Source{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/abdurrofi-i-assajid-434024280/"
+          className="bg-gray-900 p-4 text-white hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-gray-900 dark:text-yellow-300"
+          href="https://www.facebook.com/"
           target="_blank"
         >
-          <BsLinkedin />
+          <FaFacebook />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/AbdurrofiAssajid"   
+          className="text-white p-4 bg-gray-900 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-gray-900 dark:text-yellow-300"
+          href="https://www.instagram.com/"   
           target="_blank"     
         >
-          <FaGithubSquare />
+          <AiFillInstagram />
         </a>
       </motion.div>
     </section>

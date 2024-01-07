@@ -11,8 +11,8 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Abdurrofi | Personal Portfolio",
-  description: "Abdurrofi is a full-stack developer with 1 year of experience.",
+  title: "IL consultation corp - All About Islamic Law",
+  description: "The main solution for consulting law problems in Islam.",
 };
 
 export default function RootLayout({

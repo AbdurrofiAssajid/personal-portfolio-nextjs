@@ -17,32 +17,24 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading><span className="dark:text-yellow-300 text-blue-700">About</span> Us</SectionHeading>
       <p className="mb-3">
-        After graduating from senior high school of{" "}
-        <span className="font-medium">Science</span>, I decided to pursue my interest 
-        {" "} in programming. I took  a coding course and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the feeling of finally finding a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          MERN
+      We are a private company which operating in the {" "}
+        <span className="font-medium dark:text-yellow-300 text-blue-700">Law sector</span>, which has been established since 2010. 
+        {" "} And our employees have
+        <span className="font-medium"> more than 5 years </span>{" "}
+        <span className="italic">of experience in the Islamic law's sector</span> <span className="dark:text-yellow-300 text-blue-700">Our mission</span> is to educate the public about Islamic law,
+         <span className="underline"> because</span> in this era there is a lot of information circulating that is not proven to be true or 
+        {" "}
+        <span className="font-medium dark:text-yellow-300 text-blue-700">
+        hoax. {' '}
         </span>
-        . I am also familiar with TypeScript and Prisma. I always want to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+         We offer online and offline consultations,{" "}
+        <span className="font-medium">and for students</span> we will facilitate free consultations
+         every weekend both online and offline
       </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, and watching movies. {" "} I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently{" "}
-        learning about{" "}
-        <span className="font-medium">UX design</span>. I'm also
-        learning how to make a great Saas <span className="italic"> (Software as a Service) </span>.
-      </p>
+    
     </motion.section>
   );
 }
