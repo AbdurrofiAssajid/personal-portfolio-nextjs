@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import SectionHeading from "./section-heading";
 import { benefitsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";

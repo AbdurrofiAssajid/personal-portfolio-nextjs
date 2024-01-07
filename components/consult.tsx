@@ -30,7 +30,7 @@ export default function Contact() {
       <SectionHeading>Consult <span className="text-blue-800 dark:text-yellow-300">Now</span></SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-       <p>You don't need to worry about the payment, you can pay it in installments every month for up to 12 months</p>
+       You don't need to worry about the payment, you can pay it in installments every month for up to 12 months
       </p>
 
       <form

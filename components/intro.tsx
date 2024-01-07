@@ -94,7 +94,7 @@ export default function Intro() {
           download
         >
           Download Source{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className=" group-hover:translate-y-1 transition dark:text-yellow-300" />
         </a>
 
         <a
