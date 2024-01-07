@@ -9,9 +9,9 @@ export default function Footer() {
       </small>
 
      <p className="font-bold italic">
-        <Link href="https://corp-comment-site.vercel.app/"
+        <Link href="https://islamic-law-consultation.vercel.app/"
           target="_blank">
-         Islamic Law consultation - Share your opinion about this website here</Link>
+         Islamic Law consultation - Click to see the demo of this website</Link>
      </p>
     </footer>
   );
