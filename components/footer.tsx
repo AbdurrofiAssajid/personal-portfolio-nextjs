@@ -8,20 +8,20 @@ export default function Footer() {
         &copy; 2024 Justice Defence Force  | All rights reserved.
       </small>
 
+     <p className="font-bold italic">
+        <Link href="https://islamic-law-consultation.vercel.app/"
+          target="_blank">
+         Islamic Law consultation - Click here to see the demo of this website</Link>
+     </p>
      <p className="font-medium italic text-blue-800 mb-2">
         <Link href="https://remote-dev.vercel.app/"
           target="_blank">
-         I would love for you to check out our other projects, click here </Link><span className="font-medium text-red-700 mb-2">
+         Wanna see our other projects ? , click here </Link><span className="font-medium text-red-700 mb-2">
          <Link href="https://word-analytics-site.vercel.app/"
           target="_blank">
           or here</Link>
          </span>
        
-     </p>
-     <p className="font-bold italic">
-        <Link href="https://islamic-law-consultation.vercel.app/"
-          target="_blank">
-         Islamic Law consultation - Click here to see the demo of this website</Link>
      </p>
     </footer>
   );
