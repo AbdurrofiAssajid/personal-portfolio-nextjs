@@ -11,7 +11,7 @@ export default function Footer() {
      <p className="font-medium italic text-blue-800 mb-2">
         <Link href="https://remote-dev.vercel.app/"
           target="_blank">
-         If you wanna see our other project click here </Link><span className="font-medium italic text-red-700 mb-2">
+         I would love for you to check out our other projects, click here </Link><span className="font-medium text-red-700 mb-2">
          <Link href="https://word-analytics-site.vercel.app/"
           target="_blank">
           or here</Link>
