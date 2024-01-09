@@ -30,7 +30,7 @@ export default function Intro() {
               type: "tween",
               duration: 0.2,
             }}
-          >
+          > <Link href='https://corp-comment-site.vercel.app/' target="_blank">
             <Image
               src="/intro.jpg"
               alt="Islamic Law Consultation corp logo"
@@ -40,6 +40,7 @@ export default function Intro() {
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-blue-800 dark:border-yellow-400 shadow-xl"
             />
+            </Link>
           </motion.div>
 
           <motion.span
