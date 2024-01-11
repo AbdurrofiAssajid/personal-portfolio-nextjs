@@ -11,8 +11,8 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "IL consultation corp - All About Islamic Law",
-  description: "The main solution for consulting law problems in Islam.",
+  title: "IL consulting corp - All About Islamic Law",
+  description: "The main solution for consulting law's problems in Islam.",
 };
 
 export default function RootLayout({

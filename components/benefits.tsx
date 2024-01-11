@@ -33,7 +33,7 @@ export default function Benefits() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {benefitsData.map((benefit, index) => (
           <motion.li
-            className="bg-white text-black rounded-xl px-5 py-3 dark:bg-slate-900 dark:text-white border border-blue-800 dark:border-yellow-300"
+            className=" group cursor-pointer hover:bg-blue-900 hover:text-white active:scale-105 transition bg-white text-black rounded-xl px-5 py-3 dark:bg-slate-900 dark:text-white border border-blue-800 dark:border-yellow-300 dark:hover:text-black dark:hover:bg-yellow-400 "
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

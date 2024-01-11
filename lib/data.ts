@@ -38,7 +38,7 @@ export const reviewsData = [
     name: "John Doe",
     job:"CEO of Google", 
     description:
-      "IL consultation are the best corp I've ever seen, If you had problem in islamic law I highly recommend you to consult in IL consultation.",
+      "IL consulting are the best corp I've ever seen, If you had problem in islamic law I highly recommend you to consult in IL corp.",
     icon: React.createElement(FcBusinessman ),
     date: "2022",
   },
@@ -54,7 +54,7 @@ export const reviewsData = [
     name: "Silvia de bora",
     job:"Entrepreneur", 
     description:
-      "At that time I was very confused about trading laws, but since consulting with IL consultation I am no longer confused, thank you IL consultation 💖.",
+      "At that time I was very confused about trading laws, but since consulting with IL corp I am no longer confused, thank you IL corp 💖.",
     icon: React.createElement(FcBusinesswoman),
     date: "2024",
   },

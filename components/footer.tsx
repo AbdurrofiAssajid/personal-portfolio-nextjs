@@ -11,17 +11,7 @@ export default function Footer() {
      <p className="font-bold italic">
         <Link href="https://islamic-law-consultation.vercel.app/"
           target="_blank">
-         Islamic Law consultation - Click here to see the demo of this website</Link>
-     </p>
-     <p className="font-small text-blue-800 mt-2">
-        <Link href="https://remote-dev.vercel.app/"
-          target="_blank">
-         Wanna see our other projects? click here </Link><span className="font-medium italic text-red-700 mb-2">
-         <Link href="https://word-analytics-site.vercel.app/"
-          target="_blank">
-          or here</Link>
-         </span>
-       
+         Islamic Law consultation - The easiest way to consult about legal laws in Islam</Link>
      </p>
     </footer>
   );
