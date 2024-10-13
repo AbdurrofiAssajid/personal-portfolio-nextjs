@@ -1,10 +1,10 @@
-import { FcBusinessman } from "react-icons/fc";
-import { FcManager } from "react-icons/fc";
-import { FcBusinesswoman } from "react-icons/fc";
-import consultant2Img from '@/public/consultant2.jpeg'
-import consultant3Img from '@/public/consultant3.jpeg'
-import consultant1Img from '@/public/consultant1.jpeg'
 import React from "react";
+import { PiQrCodeFill } from "react-icons/pi";
+import { TbBrandReactNative } from "react-icons/tb";
+import { GiWhiteBook } from "react-icons/gi";
+import corpcommentImg from "@/public/corpcomment.png";
+import rmtdevImg from "@/public/rmtdev.png";
+import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -16,78 +16,91 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Consultant",
-    hash: "#consultant",
+    name: "Projects",
+    hash: "#projects",
   },
   {
-    name: "Benefits",
-    hash: "#benefits",
+    name: "Skills",
+    hash: "#skills",
   },
   {
-    name: "Reviews",
-    hash: "#reviews",
+    name: "Experience",
+    hash: "#experience",
   },
   {
-    name: "Consult",
-    hash: "#consult",
+    name: "Contact",
+    hash: "#contact",
   },
 ] as const;
 
-export const reviewsData = [
+export const experiencesData = [
   {
-    name: "John Doe",
-    job:"CEO of Google", 
+    title: "Learned Web Development",
+    month:"January-October", 
     description:
-      "IL consulting are the best corp I've ever seen, If you had problem in islamic law I highly recommend you to consult in IL corp.",
-    icon: React.createElement(FcBusinessman ),
-    date: "2022",
-  },
-  {
-    name: "Peter Parker",
-    job:"Actor", 
-    description:
-      "This is the first time I have consulted regarding Islamic law, and I can't believe they really explained it in detail and clearly so that I really understood, thanks IL",
-    icon: React.createElement(FcManager), 
+      "I started learning web development by taking online and offline course, learned about Programming & hypertext languages, UI/UX design and SDLC (software development life cycle)",
+    icon: React.createElement(GiWhiteBook),
     date: "2023",
   },
   {
-    name: "Silvia de bora",
-    job:"Entrepreneur", 
+    title: "built web app project",
+    month:"November-January", 
     description:
-      "At that time I was very confused about trading laws, but since consulting with IL corp I am no longer confused, thank you IL corp 💖.",
-    icon: React.createElement(FcBusinesswoman),
-    date: "2024",
+      "My first apps were portfolio website, to-do checklist, book management.",
+    icon: React.createElement(PiQrCodeFill), 
+    date: "2023",
+  },
+  {
+    title: "a Full-Stack Developer",
+    month:"January-now", 
+    description:
+      "I'm currently a full-stack developer with expertise in React, Next.js, TypeScript, Tailwind, Prisma, and MongoDB. I am open to freelance opportunities where I can leverage my skills and contribute to exciting projects.",
+    icon: React.createElement(TbBrandReactNative),
+    date: "2024 - now",
   },
 ] as const;
 
-export const benefitsData = [
-  'Trusted',
-  "Friendly services",
-  'Free consult for students',
-  'Paylater',
-  '100% refund guarantee',
-  'Online & Offline service',
-  'Guided by Professional consultant',
-  'Intensive Counsultation'
+export const projectsData = [
+  {
+    title: "CorpComment",
+    description:
+      "An open-source project that allows users to provide feedback to companies.",
+    tags: ["JavaScript", "HTML", "CSS"],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: "remoteDev",
+    description:
+      "Job board for remote developer jobs. It has features like filtering, sorting and pagination.",
+    tags: ["JavaScript", "HTML", "CSS"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "Word Analytics",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["JavaScript", "HTML", "CSS"],
+    imageUrl: wordanalyticsImg,
+  },
+  
 ] as const;
 
-export const consultantData = [
-  {
-    name: 'Andrés De Fonollosa',
-    description: "There is no happiness if a day doesn't help people, I'd be very happy if I can help people.",
-    tags:['expert', '6 years of experience'],
-    imageUrl: consultant1Img
-  },
-  {
-    name: 'Silene Oliveira',
-    description: 'Customer satisfaction is our priority, we will serve you wholeheartedly.',
-    tags:['expert', '7 years of experience'],
-    imageUrl: consultant2Img
-  },
-  {
-    name: 'Sergio Marquina',
-    description: 'Explain in detail then I will solve your problem in 5 minutes.',
-    tags:['expert', '10 years of experience'],
-    imageUrl: consultant3Img
-  },
-] as const
+
+export const skillsData = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Git",
+  "Tailwind",
+  "Prisma",
+  "MongoDB",
+  "PostgreSQL",
+  "Python",
+  "Framer Motion",
+  "C",
+  "UI/UX",
+] as const;

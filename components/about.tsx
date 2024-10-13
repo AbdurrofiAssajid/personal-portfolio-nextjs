@@ -17,24 +17,27 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading><span className="dark:text-yellow-300 text-blue-700">About</span> Us</SectionHeading>
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-      We are a private company which operating in the {" "}
-        <span className="font-medium dark:text-yellow-300 text-blue-700">Law sector</span>, which has been established since 2010. 
-        {" "} And our employees have
-        <span className="font-medium"> more than 5 years </span>{" "}
-        <span className="italic">of experience in the Islamic law's sector</span> <span className="dark:text-yellow-300 text-blue-700">Our mission</span> is to educate the public about Islamic law,
-         <span className="underline"> because</span> in this era there is a lot of information circulating that is not proven to be true or 
-        {" "}
-        <span className="font-medium dark:text-yellow-300 text-blue-700">
-        hoax. {' '}
+      Since childhood,{" "}
+        <span className="font-medium">I've been fascinated by technology and often called tech-savvy.</span> {" "}
+        I've always been curious about how computers work,{" "}
+        <span className="font-medium">such as the process of data transfer between computers, which led me to study computer science in depth.</span>{" "}
+        <span className="italic">I also deeply enjoy problem-solving.</span>  I didn't pursue IT just because of trends or fear of missing out {" "}
+        <span className="font-medium">
+        (FOMO);
         </span>
-         We offer online and offline consultations,{" "}
-        <span className="font-medium">and for students</span> we will facilitate free consultations
-         every weekend both online and offline
+        {" "} it's genuinely my hobby and passion.
       </p>
 
-    
+      <p>
+        <span className="italic">Outside of coding</span>, I enjoy playing
+        video games, exploring new topics. {" "}    
+         I am currently{" "}
+        learning about{" "}
+        <span className="font-medium">UX design</span>, and also
+        learning how to make a great SaaS <span className="italic"> (Software as a Service) </span>.
+      </p>
     </motion.section>
   );
 }

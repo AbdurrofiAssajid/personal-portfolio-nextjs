@@ -1,21 +1,21 @@
 import About from "@/components/about";
-import Consult from "@/components/consult";
-import Reviews from "@/components/reviews";
+import Contact from "@/components/contact";
+import Experience from "@/components/experience";
 import Intro from "@/components/intro";
+import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
-import Benefits from "@/components/benefits";
-import Consultants from '@/components/consultants'
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
       <Intro />
       <SectionDivider />
-      <About />     
-      <Consultants/>
-      <Benefits />
-      <Reviews />
-      <Consult />
+      <About />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
     </main>
   );
 }
