@@ -11,7 +11,7 @@ const Outlooks = () => {
 
   return (
     <section ref={ref} id="outlooks" className="py-20">
-        <SectionHeading><span className="dark:text-purple-500">Outlooks </span>of me</SectionHeading>
+        <SectionHeading>Outlooks of me</SectionHeading>
       <div className="flex flex-col items-center max-lg:mt-10">
         <div
           className="h-[60vh] md:h-[30rem] w-full rounded-lg flex flex-col antialiased items-center justify-center relative overflow-hidden bg-transparent transition-colors duration-300"
