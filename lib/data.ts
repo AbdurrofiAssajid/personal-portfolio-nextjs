@@ -2,9 +2,9 @@ import React from "react";
 import { PiQrCodeFill } from "react-icons/pi";
 import { TbBrandReactNative } from "react-icons/tb";
 import { GiWhiteBook } from "react-icons/gi";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import contact from "@/public/contact.png";
+import filmfinder from "@/public/filmfinder.png";
+import counter from "@/public/counter.png";
 
 export const links = [
   {
@@ -24,6 +24,10 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Outlooks",
+    hash: "#outlooks",
+  },
+  {
     name: "Experience",
     hash: "#experience",
   },
@@ -36,25 +40,25 @@ export const links = [
 export const experiencesData = [
   {
     title: "Learned Web Development",
-    month:"January-October", 
+    month: "January-October",
     description:
-      "I started learning web development by taking online and offline course, learned about Programming & hypertext languages, UI/UX design and SDLC (software development life cycle)",
+      "I started learning web development by taking online and offline course, learned about Programming & hypertext languages, UI/UX design and Project Management",
     icon: React.createElement(GiWhiteBook),
     date: "2023",
   },
   {
-    title: "built web app project",
-    month:"November-January", 
+    title: "Enrolled in the Frontend Bootcamp(GENICS).",
+    month: "September-October",
     description:
-      "My first apps were portfolio website, to-do checklist, book management.",
-    icon: React.createElement(PiQrCodeFill), 
-    date: "2023",
+      "Studied frontend development and developed a variety of websites as a way to learn.",
+    icon: React.createElement(PiQrCodeFill),
+    date: "2024",
   },
   {
-    title: "a Full-Stack Developer",
-    month:"January-now", 
+    title: "PIC Frontend Division",
+    month: "October-Now",
     description:
-      "I'm currently a full-stack developer with expertise in React, Next.js, TypeScript, Tailwind, Prisma, and MongoDB. I am open to freelance opportunities where I can leverage my skills and contribute to exciting projects.",
+      "As the PIC(Person In Charge) for the front-end team in this e-learning project, I manage and lead our efforts in developing user-friendly interfaces. I work closely with my team to enhance the overall learning experience, creating a platform that is both visually appealing and easy to navigate.",
     icon: React.createElement(TbBrandReactNative),
     date: "2024 - now",
   },
@@ -62,29 +66,30 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Contact Organizer",
     description:
-      "An open-source project that allows users to provide feedback to companies.",
-    tags: ["JavaScript", "HTML", "CSS"],
-    imageUrl: corpcommentImg,
+      "An open-source project that allows users to adhere their contact, and also implementing api-auth with bearer token.",
+    tags: ["Next JS", "Authorization", "CSS"],
+    imageUrl: contact,
+    projectUrl: "https://contact-organizer-nextjs.vercel.app/",
   },
   {
-    title: "remoteDev",
+    title: "Counter Web App",
     description:
-      "Job board for remote developer jobs. It has features like filtering, sorting and pagination.",
-    tags: ["JavaScript", "HTML", "CSS"],
-    imageUrl: rmtdevImg,
+      "A web-based counter tool lets users easily increment, decrement, and reset counts, offering seamless, interactive functionality.",
+    tags: ["Next JS", "Dark Mode", "Local Storage"],
+    imageUrl: counter,
+    projectUrl: "https://counter-web-app-nextjs.vercel.app/",
   },
   {
-    title: "Word Analytics",
+    title: "Film Finder",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["JavaScript", "HTML", "CSS"],
-    imageUrl: wordanalyticsImg,
+      "Film Finder: Easily find movies, just enter a title, and instantly access detailed information like posters, release years, and genres, all powered by a robust API.",
+    tags: ["Next JS", "OMDB Api"],
+    imageUrl: filmfinder,
+    projectUrl: "https://film-finder-site.vercel.app/",
   },
-  
 ] as const;
-
 
 export const skillsData = [
   "HTML",
@@ -104,3 +109,36 @@ export const skillsData = [
   "C",
   "UI/UX",
 ] as const;
+
+export const outlooks = [
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+];

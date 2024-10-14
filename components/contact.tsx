@@ -12,10 +12,11 @@ export default function Contact() {
   const { ref } = useSectionInView("Contact");
 
   return (
-    <motion.section
+    <div className="flex justify-center items-center">
+       <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-20 sm:mb-28 w-[min(100%,38rem)] justify-end items-end"
       initial={{
         opacity: 0,
       }}
@@ -27,7 +28,7 @@ export default function Contact() {
       }}
 
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>Contact <span className="text-purple-500">me</span></SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         You could contact me by email: {" "}
@@ -73,5 +74,7 @@ export default function Contact() {
         <SubmitBtn />
       </form>
     </motion.section>
+    </div>
+   
   );
 }

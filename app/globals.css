@@ -13,3 +13,9 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+}

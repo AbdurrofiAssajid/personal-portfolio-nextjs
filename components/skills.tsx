@@ -24,7 +24,8 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <section
+    <div className="flex justify-center items-center">
+      <section
       id="skills"
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
@@ -45,5 +46,7 @@ export default function Skills() {
         ))}
       </ul>
     </section>
+    </div>
+    
   );
 }
