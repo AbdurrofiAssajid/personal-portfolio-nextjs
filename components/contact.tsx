@@ -28,7 +28,7 @@ export default function Contact() {
       }}
 
     >
-      <SectionHeading>Contact <span className="text-purple-500">me</span></SectionHeading>
+      <SectionHeading>Contact <span className="dark:text-purple-500">me</span></SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         You could contact me by email: {" "}
