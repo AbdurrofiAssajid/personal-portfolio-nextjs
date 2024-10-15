@@ -105,7 +105,7 @@ export const InfiniteMovingCards = ({
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <div className="me-3">
                   <Image
-                    src="/about.jpeg"
+                    src="/outlook2.jpg"
                     width={60}
                     height={60}
                     alt="profile"
