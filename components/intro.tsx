@@ -66,7 +66,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <TextGenerateEffect
-          words="Welcome to My Creative Hub – Let’s Build Something Great Together!"
+          words="Thank you for visiting my portfolio! I appreciate your time and hope you enjoy exploring my work."
           className="text-center text-[140px] md:text-6xl mt-6 lg:text-7xl font-bold"
         />
       </motion.h1>
