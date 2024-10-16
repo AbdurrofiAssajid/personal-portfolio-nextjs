@@ -4,13 +4,15 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
+import { FaPaperPlane } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
   title,
   description,
-  tags,
+  iconLists,
   imageUrl,
   projectUrl,
 }: ProjectProps) {
@@ -24,61 +26,89 @@ export default function Project({
 
   return (
     <motion.div
-      className="flex justify-center items-center group mb-3 sm:mb-8 last:mb-0"
       ref={ref}
       style={{
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
+      className="mb-3 sm:mb-8 last:mb-0"
     >
-      <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-        <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-          <Image
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={95}
-            className="
-              block sm:hidden w-full h-auto max-h-[20rem] object-cover 
-              transition 
-              group-hover:scale-[1.02]
-            "
-          />
-          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-            <h3 className="text-2xl font-semibold">{title}</h3>
-            <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-              {description}
-            </p>
-            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-              {tags.map((tag, index) => (
-                <li
-                  className="bg-[#13162D] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                  key={index}
-                >
-                  {tag}
-                </li>
-              ))}
-            </ul>
-          </div>
+      <CardContainer className="inter-var">
+        <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-slate-800 dark:border-white/[0.2] border-black/[0.1] w-[20rem] sm:w-[42rem] h-auto rounded-xl p-6 border">
+          <CardItem
+            translateZ="50"
+            className="text-2xl font-bold text-gray-700 dark:text-white"
+          >
+            {title}
+          </CardItem>
 
-          <Image
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={95}
-            className="
-              absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-              transition 
-              group-hover:scale-[1.04]
-              group-hover:-translate-x-3
-              group-hover:translate-y-3
-              group-hover:-rotate-2
-              group-even:group-hover:translate-x-3
-              group-even:group-hover:translate-y-3
-              group-even:group-hover:rotate-2
-              group-even:right-[initial] group-even:-left-40
-            "
-          />
-        </section>
-      </a>
+          <CardItem
+            as="p"
+            translateZ="60"
+            className="mt-2 leading-relaxed italic text-gray-700 dark:text-white/70"
+          >
+            {description}
+          </CardItem>
+
+          <CardItem
+            translateZ="100"
+            rotateX={20}
+            rotateZ={-10}
+            className="w-full mt-4"
+          >
+            <div className="relative w-full h-80 sm:h-96 overflow-hidden rounded-xl">
+              <Image
+                src={imageUrl}
+                alt="Project I worked on"
+                quality={95}
+                fill
+                sizes="(max-width: 640px) 100vw, 80vw" 
+                style={{ objectFit: "cover" }}
+                className="group-hover/card:shadow-xl transition"
+              />
+            </div>
+          </CardItem>
+
+          <div className="flex justify-between items-center mt-8">
+            <div className="flex gap-2 flex-wrap max-w-[70%]">
+              {iconLists.map((icon, index) => (
+                <CardItem
+                  translateZ={80}
+                  key={index}
+                  className="bg-[#13162D] w-10 h-10 rounded-md flex items-center justify-center dark:text-white/70"
+                >
+                  <div className="flex items-center justify-center">
+                    <Image
+                      src={icon}
+                      alt={`icon-${index}`}
+                      width={24}
+                      height={24}
+                      style={{ width: "auto", height: "auto" }}
+                      className="rounded-sm object-contain"
+                    />
+                  </div>
+                </CardItem>
+              ))}
+            </div>
+
+            <CardItem
+              translateZ={20}
+              as="button"
+              className="px-4 py-2 rounded-xl bg-gray-100 dark:bg-white/10 text-xs font-semibold dark:text-white"
+            >
+              <a
+                href={projectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                View Project
+                 <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 " />{" "}           
+              </a>
+            </CardItem>
+          </div>
+        </CardBody>
+      </CardContainer>
     </motion.div>
   );
 }

@@ -73,7 +73,7 @@ export const projectsData = [
     title: "Contact Organizer",
     description:
       "An open-source project that allows users to adhere their contact, and also implementing api-auth with bearer token.",
-    tags: ["Next JS", "Authorization", "CSS"],
+    iconLists: ["/next.svg", "/tail.svg", "/js.svg"],
     imageUrl: contact,
     projectUrl: "https://contact-organizer-nextjs.vercel.app/",
   },
@@ -81,7 +81,7 @@ export const projectsData = [
     title: "Film Finder",
     description:
       "Film Finder: Easily find movies, just enter a title, and instantly access detailed information like posters, release years, and genres, all powered by a robust API.",
-    tags: ["Next JS", "OMDB Api"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     imageUrl: filmfinder,
     projectUrl: "https://film-finder-site.vercel.app/",
   },
@@ -89,7 +89,7 @@ export const projectsData = [
     title: "Counter Web App",
     description:
       "A web-based counter tool lets users easily increment, decrement, and reset counts, offering seamless, interactive functionality.",
-    tags: ["Next JS", "Dark Mode", "Local Storage"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     imageUrl: counter,
     projectUrl: "https://counter-web-app-nextjs.vercel.app/",
   },
@@ -133,14 +133,14 @@ export const outlooks = [
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
     name: "Someone",
     title: "Software QA at DSI",
-    pictureUrl: outlook2.src,
+    pictureUrl: about.src,
   },
   {
     quote:
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
     name: "Abdurrofi'i",
     title: "Software QA at DSI",
-    pictureUrl: outlook2.src,
+    pictureUrl: about.src,
   },
 ];
 

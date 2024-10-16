@@ -32,6 +32,7 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
+            
             <Image
               src="/about.jpeg"
               alt="Abdurrofi portrait"
