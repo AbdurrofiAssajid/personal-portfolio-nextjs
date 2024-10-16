@@ -5,6 +5,10 @@ import { GiWhiteBook } from "react-icons/gi";
 import contact from "@/public/contact.png";
 import filmfinder from "@/public/filmfinder.png";
 import counter from "@/public/counter.png";
+import outlook1 from '@/public/outlook1.png'
+import outlook2 from '@/public/outlook2.jpg'
+import main from '@/public/main.png'
+import about from '@/public/about.jpeg'
 
 export const links = [
   {
@@ -74,20 +78,20 @@ export const projectsData = [
     projectUrl: "https://contact-organizer-nextjs.vercel.app/",
   },
   {
-    title: "Counter Web App",
-    description:
-      "A web-based counter tool lets users easily increment, decrement, and reset counts, offering seamless, interactive functionality.",
-    tags: ["Next JS", "Dark Mode", "Local Storage"],
-    imageUrl: counter,
-    projectUrl: "https://counter-web-app-nextjs.vercel.app/",
-  },
-  {
     title: "Film Finder",
     description:
       "Film Finder: Easily find movies, just enter a title, and instantly access detailed information like posters, release years, and genres, all powered by a robust API.",
     tags: ["Next JS", "OMDB Api"],
     imageUrl: filmfinder,
     projectUrl: "https://film-finder-site.vercel.app/",
+  },
+  {
+    title: "Counter Web App",
+    description:
+      "A web-based counter tool lets users easily increment, decrement, and reset counts, offering seamless, interactive functionality.",
+    tags: ["Next JS", "Dark Mode", "Local Storage"],
+    imageUrl: counter,
+    projectUrl: "https://counter-web-app-nextjs.vercel.app/",
   },
 ] as const;
 
@@ -102,11 +106,9 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "Prisma",
-  "MongoDB",
-  "PostgreSQL",
+  "Xampp",
   "Python",
   "Framer Motion",
-  "C",
   "UI/UX",
 ] as const;
 
@@ -117,23 +119,52 @@ export const outlooks = [
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
     name: "Devanza Priansyah",
     title: "Software QA at DSI",
+    pictureUrl: outlook1.src,
   },
   {
     quote:
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
-    name: "Devanza Priansyah",
+    name: "Somebody",
     title: "Software QA at DSI",
+    pictureUrl: outlook1.src,
   },
   {
     quote:
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
-    name: "Devanza Priansyah",
+    name: "Someone",
     title: "Software QA at DSI",
+    pictureUrl: outlook2.src,
   },
   {
     quote:
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
-    name: "Devanza Priansyah",
+    name: "Abdurrofi'i",
     title: "Software QA at DSI",
+    pictureUrl: outlook2.src,
   },
 ];
+
+
+export const cardData = [
+    {
+      title: "Curiosity is the key",
+      description: "Hover over this card to unleash the power of CSS perspective",
+      imageSrc: contact,
+      buttonText: "Try now →",
+      aboutUrl:"https://contact-organizer-nextjs.vercel.app/",
+    },
+    {
+      title: "Explore new things",
+      description: "Discover the magic of 3D transformations in web design",
+      imageSrc: filmfinder,
+      buttonText: "Learn more →",
+      aboutUrl: 'https://film-finder-site.vercel.app/',
+    },
+    {
+      title: "Srong-headed",
+      description: "Take your web development skills to the next level",
+      imageSrc: counter,
+      buttonText: "Get started →",
+      aboutUrl: 'https://counter-web-app-nextjs.vercel.app/',
+    },
+  ];
