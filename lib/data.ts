@@ -6,7 +6,7 @@ import contact from "@/public/contact.png";
 import filmfinder from "@/public/filmfinder.png";
 import counter from "@/public/counter.png";
 import outlook1 from '@/public/outlook1.png'
-import outlook2 from '@/public/outlook2.jpg'
+import masdevan from '@/public/masdevan.jpg'
 import main from '@/public/main.png'
 import about from '@/public/about.jpeg'
 
@@ -119,21 +119,21 @@ export const outlooks = [
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
     name: "Devanza Priansyah",
     title: "Software QA at DSI",
-    pictureUrl: outlook1.src,
+    pictureUrl: masdevan.src,
   },
   {
     quote:
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
     name: "Somebody",
     title: "Software QA at DSI",
-    pictureUrl: outlook1.src,
+    pictureUrl: masdevan.src,
   },
   {
     quote:
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
     name: "Someone",
     title: "Software QA at DSI",
-    pictureUrl: about.src,
+    pictureUrl: masdevan.src,
   },
   {
     quote:

@@ -6,11 +6,7 @@ export default function Footer() {
       <small className="mb-2 block text-xs">
         &copy; 2024 Abdurrofi | All rights reserved.
       </small>
-      <p className="text-xs italic font-bold">
-        <a href="https://github.com/AbdurrofiAssajid"
-          target="_blank">
-          Thank You For Visiting My Portfolio Website</a>
-      </p>
+      <blockquote className="text-xs font-bold italic">I believe - "Improving 1% each day is way better than waiting for the perfect moment to make a big leap."</blockquote>
     </footer>
   );
 }

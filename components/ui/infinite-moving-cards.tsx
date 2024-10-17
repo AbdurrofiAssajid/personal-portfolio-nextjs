@@ -104,13 +104,13 @@ export const InfiniteMovingCards = ({
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <div className="me-3">
+                <div className="me-3 rounded-full">
                   <Image
                     className="rounded-full"
                     src={item.pictureUrl}
                     alt={item.name}
-                    width={60}
-                    height={60}
+                    width={40}
+                    height={40}
                     style={{ width: "auto", height: "auto" }}
                   />
                 </div>

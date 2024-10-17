@@ -6,11 +6,12 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
 
+
 const Outlooks = () => {
   const { ref } = useSectionInView("Outlooks");
 
   return (
-    <section ref={ref} id="outlooks" className="py-20">
+    <section ref={ref} id="outlooks" className="py-20 pt-10">
         <SectionHeading>Outlooks of me</SectionHeading>
       <div className="flex flex-col items-center max-lg:mt-10">
         <div
@@ -19,7 +20,7 @@ const Outlooks = () => {
           <InfiniteMovingCards
             items={outlooks}
             direction="right"
-            speed="slow"
+            speed="slow"           
           />
         </div>
       </div>
