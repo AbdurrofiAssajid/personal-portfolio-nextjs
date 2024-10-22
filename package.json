@@ -11,9 +11,11 @@
   "dependencies": {
     "@react-email/components": "^0.0.11",
     "@react-email/tailwind": "^0.0.12",
+    "@tabler/icons-react": "^3.19.0",
     "@vercel/speed-insights": "^1.0.2",
     "clsx": "^2.1.1",
     "framer-motion": "^10.18.0",
+    "lucide-react": "^0.453.0",
     "next": "^14.0.3",
     "react": "^18",
     "react-dom": "^18",
@@ -21,9 +23,10 @@
     "react-icons": "^4.12.0",
     "react-intersection-observer": "^9.5.3",
     "react-simple-typewriter": "^5.0.1",
+    "react-toastify": "^10.0.6",
     "react-vertical-timeline-component": "^3.6.0",
     "resend": "^0.16.0",
-    "tailwind-merge": "^2.5.3"
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@types/node": "^20",

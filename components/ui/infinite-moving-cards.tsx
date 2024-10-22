@@ -87,13 +87,13 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item) => (
+        {items.map((item, index) => (
           <li
             className={cn(
               "w-[350px] max-w-full relative rounded-2xl  flex-shrink-0 border-gray-100 px-8 py-6 md:w-[450px]",
-              "bg-gray-100 dark:bg-slate-800" // Menghapus gradien biru gelap
+              "bg-gray-200 dark:bg-slate-800" 
             )}
-            key={item.name}
+            key={index}
           >
             <blockquote>
               <div

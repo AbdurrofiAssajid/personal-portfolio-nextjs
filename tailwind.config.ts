@@ -34,20 +34,18 @@ module.exports = {
     },
   },
   plugins: [
-    addVariablesForColors, // Including the custom plugin
+    addVariablesForColors, 
   ],
 };
 
-// Define the plugin with explicit typing for 'PluginAPI'
 function addVariablesForColors({ addBase, theme }: PluginAPI) {
   let allColors = flattenColorPalette(theme("colors"));
   
-  // Ensure the values are correctly typed as strings
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, String(val)])
   );
 
   addBase({
-    ":root": newVars, // Now all values in newVars are strings
+    ":root": newVars, 
   });
 }

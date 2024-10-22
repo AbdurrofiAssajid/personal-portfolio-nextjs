@@ -5,9 +5,7 @@ import { GiWhiteBook } from "react-icons/gi";
 import contact from "@/public/contact.png";
 import filmfinder from "@/public/filmfinder.png";
 import counter from "@/public/counter.png";
-import outlook1 from '@/public/outlook1.png'
 import masdevan from '@/public/masdevan.jpg'
-import main from '@/public/main.png'
 import about from '@/public/about.jpeg'
 
 export const links = [
@@ -102,7 +100,8 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
+  "Aceternity UI",
+  "Shadcn UI",
   "Git",
   "Tailwind",
   "Prisma",
@@ -123,48 +122,24 @@ export const outlooks = [
   },
   {
     quote:
-      "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
-    name: "Somebody",
-    title: "Software QA at DSI",
-    pictureUrl: masdevan.src,
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor a turpis vehicula bibendum. Suspendisse potenti.",
+    name: "lorem",
+    title: "lorem",
+    pictureUrl: about.src,
   },
   {
     quote:
-      "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
-    name: "Someone",
-    title: "Software QA at DSI",
-    pictureUrl: masdevan.src,
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor a turpis vehicula bibendum. Suspendisse potenti.",
+    name: "lorem",
+    title: "lorem",
+    pictureUrl: about.src,
   },
   {
     quote:
-      "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
-    name: "Abdurrofi'i",
-    title: "Software QA at DSI",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor a turpis vehicula bibendum. Suspendisse potenti. ",
+    name: "lorem",
+    title: "lorem",
     pictureUrl: about.src,
   },
 ];
 
-
-export const cardData = [
-    {
-      title: "Curiosity is the key",
-      description: "Hover over this card to unleash the power of CSS perspective",
-      imageSrc: contact,
-      buttonText: "Try now →",
-      aboutUrl:"https://contact-organizer-nextjs.vercel.app/",
-    },
-    {
-      title: "Explore new things",
-      description: "Discover the magic of 3D transformations in web design",
-      imageSrc: filmfinder,
-      buttonText: "Learn more →",
-      aboutUrl: 'https://film-finder-site.vercel.app/',
-    },
-    {
-      title: "Srong-headed",
-      description: "Take your web development skills to the next level",
-      imageSrc: counter,
-      buttonText: "Get started →",
-      aboutUrl: 'https://counter-web-app-nextjs.vercel.app/',
-    },
-  ];
