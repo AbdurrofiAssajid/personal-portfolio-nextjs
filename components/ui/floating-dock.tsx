@@ -42,44 +42,51 @@ const FloatingDockMobile = ({
   className?: string;
 }) => {
   const [open, setOpen] = useState(false);
-  
+
   return (
     <div className={cn("relative block md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute rounded-full leading-7 bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+            className="absolute rounded-full bottom-full mb-2 inset-x-0 flex flex-col items-center gap-1"
           >
             {items.map((item, idx) => (
               <motion.div
                 key={item.title}
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 8 }}
                 animate={{
                   opacity: 1,
                   y: 0,
                 }}
                 exit={{
                   opacity: 0,
-                  y: 10,
+                  y: 8,
                   transition: {
-                    delay: idx * 0.05,
+                    delay: idx * 0.03,
                   },
                 }}
-                transition={{ delay: (items.length - 1 - idx) * 0.05 }}
+                transition={{ 
+                  delay: (items.length - 1 - idx) * 0.03,
+                  duration: 0.2
+                }}
+                className="w-full"
               >
                 <Link
                   href={item.href}
                   className="flex flex-col items-center"
+                  onClick={() => setOpen(false)}
                 >
-                  <div className="h-10 w-10 rounded-full bg-gray-50 dark:bg-[#13162D] flex items-center justify-center">
-                    {item.icon}
+                  <div className="h-8 w-8 rounded-full bg-gray-50 dark:bg-[#13162D] flex items-center justify-center shadow-sm">
+                    <div className="scale-75">
+                      {item.icon}
+                    </div>
                   </div>
                   <motion.div
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={{ opacity: 0, y: 5 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="mt-1 whitespace-pre rounded-md bg-gray-100 border dark:bg-[#13162D] dark:border-[#13162D] dark:text-white border-gray-200 text-neutral-700 text-xs"
+                    exit={{ opacity: 0, y: 5 }}
+                    className="mt-0.5 px-2 py-0.5 whitespace-pre rounded-md bg-gray-100 border dark:bg-[#13162D] dark:border-[#13162D] dark:text-white border-gray-200 text-neutral-700 text-[10px] shadow-sm"
                   >
                     {item.title}
                   </motion.div>
@@ -91,13 +98,15 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className=""
+        className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-[#13162D] transition-colors"
+        aria-label="Toggle navigation menu"
       >
         <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
       </button>
     </div>
   );
 };
+
 const FloatingDockDesktop = ({
   items,
   className,
