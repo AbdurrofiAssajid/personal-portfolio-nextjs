@@ -3,8 +3,10 @@ import { PiQrCodeFill } from "react-icons/pi";
 import { TbBrandReactNative } from "react-icons/tb";
 import { GiWhiteBook } from "react-icons/gi";
 import contact from "@/public/contact.png";
-import filmfinder from "@/public/filmfinder.png";
+import filmFinder from "@/public/filmfinder.png";
 import counter from "@/public/counter.png";
+import wordAnalytics from '@/public/wordanalytics.png'
+import corpComment from '@/public/corpcomment.png'
 import masdevan from '@/public/masdevan.jpg'
 import about from '@/public/about.jpeg'
 
@@ -80,7 +82,7 @@ export const projectsData = [
     description:
       "Film Finder: Easily find movies, just enter a title, and instantly access detailed information like posters, release years, and genres, all powered by a robust API.",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-    imageUrl: filmfinder,
+    imageUrl: filmFinder,
     projectUrl: "https://film-finder-site.vercel.app/",
   },
   {
@@ -90,6 +92,22 @@ export const projectsData = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     imageUrl: counter,
     projectUrl: "https://counter-web-app-nextjs.vercel.app/",
+  },
+  {
+    title: "Word Analytics",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    imageUrl: wordAnalytics,
+    projectUrl: "https://word-analytics-site.vercel.app/",
+  },
+  {
+    title: "Corp Comment",
+    description:
+      "An open-source project that allows users to provide feedback to companies.",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    imageUrl: corpComment,
+    projectUrl: "https://corp-comment-site.vercel.app/",
   },
 ] as const;
 
