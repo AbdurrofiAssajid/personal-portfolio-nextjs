@@ -9,7 +9,7 @@ import wordAnalytics from '@/public/images/wordanalytics.png'
 import corpComment from '@/public/images/corpcomment.png'
 import remoteDev from '@/public/images/rmtdev.png'
 import masdevan from '@/public/images/masdevan.jpg'
-import about from '@/public/images/about.jpeg'
+import profile3 from '@/public/images/profile3.jpg'
 import NextJS from '@/public/icons/nextjs.svg'
 import ReactJS from '@/public/icons/react.svg'
 import Tailwind from '@/public/icons/tail.svg'
@@ -178,21 +178,21 @@ export const outlooks = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor a turpis vehicula bibendum. Suspendisse potenti.",
     name: "lorem",
     title: "lorem",
-    pictureUrl: about.src,
+    pictureUrl: profile3.src,
   },
   {
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor a turpis vehicula bibendum. Suspendisse potenti.",
     name: "lorem",
     title: "lorem",
-    pictureUrl: about.src,
+    pictureUrl: profile3.src,
   },
   {
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor a turpis vehicula bibendum. Suspendisse potenti. ",
     name: "lorem",
     title: "lorem",
-    pictureUrl: about.src,
+    pictureUrl: profile3.src,
   },
 ];
 
