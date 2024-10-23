@@ -171,28 +171,28 @@ export const outlooks = [
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
     name: "Devanza Priansyah",
     title: "Software QA at DSI",
-    pictureUrl: masdevan.src || '/images/masdevan.jpg',
+    pictureUrl: masdevan.src,
   },
   {
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor a turpis vehicula bibendum. Suspendisse potenti.",
     name: "lorem",
     title: "lorem",
-    pictureUrl: about.src || '/images/about.jpeg',
+    pictureUrl: about.src,
   },
   {
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor a turpis vehicula bibendum. Suspendisse potenti.",
     name: "lorem",
     title: "lorem",
-    pictureUrl: about.src || '/images/about.jpeg',
+    pictureUrl: about.src,
   },
   {
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor a turpis vehicula bibendum. Suspendisse potenti. ",
     name: "lorem",
     title: "lorem",
-    pictureUrl: about.src || '/images/about.jpeg',
+    pictureUrl: about.src,
   },
 ];
 
