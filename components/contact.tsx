@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
@@ -16,7 +16,7 @@ export default function Contact() {
   const [messageValue, setMessageValue] = useState("");
 
   const handleSubmit = async (formData: FormData) => {
-    const { data, error } = await sendEmail(formData);
+    const { error } = await sendEmail(formData);
     if (error) {
       toast.error(error);
       return;
@@ -31,7 +31,6 @@ export default function Contact() {
         progress: undefined,
         theme: "light",
       });
-      // Reset form values
       setEmailValue("");
       setMessageValue("");
       formRef.current?.reset();

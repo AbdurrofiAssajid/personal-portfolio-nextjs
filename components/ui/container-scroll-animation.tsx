@@ -1,12 +1,12 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 
 export const ContainerScroll = ({
   titleComponent,
   children,
 }: {
-  titleComponent: string | React.ReactNode;
+  titleComponent: React.ReactNode;
   children: React.ReactNode;
 }) => {
   const containerRef = useRef<any>(null);
@@ -15,13 +15,14 @@ export const ContainerScroll = ({
     offset: ["start center", "center center"]
   });
   
-  const [isMobile, setIsMobile] = React.useState(false);
+ const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  React.useEffect(() => {
+  // Using useEffect to manage window resize
+  useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    checkMobile();
+    
     window.addEventListener("resize", checkMobile);
     return () => {
       window.removeEventListener("resize", checkMobile);
