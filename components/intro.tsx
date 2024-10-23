@@ -36,7 +36,7 @@ export default function Intro() {
                 }}
               >
                 <Image
-                  src="/about.jpeg"
+                  src="/images/about.jpeg"
                   alt="Abdurrofi portrait"
                   width={100}
                   height={100}
