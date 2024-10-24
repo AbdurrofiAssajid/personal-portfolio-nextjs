@@ -1,7 +1,7 @@
 import React from "react";
-import { PiQrCodeFill } from "react-icons/pi";
-import { TbBrandReactNative } from "react-icons/tb";
-import { GiWhiteBook } from "react-icons/gi";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaUserTie } from "react-icons/fa";
+import { FaChartLine } from "react-icons/fa";
 import contact from "@/public/images/contact.png";
 import filmFinder from "@/public/images/filmfinder.png";
 import counter from "@/public/images/counter.png";
@@ -18,6 +18,8 @@ import Javascript from '@/public/icons/js.svg'
 import Typescript from '@/public/icons/ts.svg'
 import FramerMotion from '@/public/icons/motion.svg'
 import ShadcnUI from '@/public/icons/shadcnui.svg'
+import SDLC from '@/public/images/sdlc.jpg'
+
 
 export const links = [
   {
@@ -25,8 +27,8 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
+    name: "Achievement",
+    hash: "#achievement",
   },
   {
     name: "Projects",
@@ -56,7 +58,7 @@ export const experiencesData = [
     month: "January-October",
     description:
       "I started learning web development by taking online and offline course, learned about Programming & hypertext languages, UI/UX design and Project Management",
-    icon: React.createElement(GiWhiteBook),
+    icon: React.createElement(FaChartLine),
     date: "2023",
   },
   {
@@ -64,7 +66,7 @@ export const experiencesData = [
     month: "September-October",
     description:
       "Studied frontend development and developed a variety of websites as a way to learn.",
-    icon: React.createElement(PiQrCodeFill),
+    icon: React.createElement(FaLaptopCode),
     date: "2024",
   },
   {
@@ -72,7 +74,7 @@ export const experiencesData = [
     month: "October-Now",
     description:
       "As the PIC(Person In Charge) for the front-end team in this e-learning project, I manage and lead our efforts in developing user-friendly interfaces. I work closely with my team to enhance the overall learning experience, creating a platform that is both visually appealing and easy to navigate.",
-    icon: React.createElement(TbBrandReactNative),
+    icon: React.createElement(FaUserTie),
     date: "2024 - now",
   },
 ] as const;
@@ -164,8 +166,7 @@ export const skillsData = [
 
 ] as const;
 
-export const outlooks = [
-  
+export const outlooksData = [
   {
     quote:
       "It's rare to come across someone as motivated and enthusiastic as Abdurrofi. He is passionate about improving his developing skills. He also has positive attitude and strong work ethic were contagious, and he always brought fresh ideas to share.",
@@ -194,5 +195,45 @@ export const outlooks = [
     title: "lorem",
     pictureUrl: profile3.src,
   },
-];
+]
 
+export interface AchievementCard {
+  category: string;
+  title: string;
+  src: string;
+  content: string;
+}
+
+export const achievementData: AchievementCard[] = [
+  {
+    category: "SDLC (Software Engineering Development and Logical Competition) - 2023",
+    title: "Silver Medalist",
+    src: "/images/sdlc.jpg",
+    content: "In my opinion, the SDLC was the most innovative and prestigious competition. Although it was an individual event, I took on the role of a project manager, similar to a founder building a startup. I developed a business proposal, created an application prototype, crafted a business plan, designed the business flow, and pitched my project. Before reaching the final round, I had to pass the proposal creation stage. After that, I was given four days to develop the prototype, which culminated in a presentation of my work."
+  },
+  {
+    category: "National Informatics Competition - 2023",
+    title: "Gold Medalist",
+    src: "/images/informatics-gold.png",
+    content: "I participated in a national-level online informatics competition, structured like an Olympiad, where I answered questions on computer science, mathematics, and programming logic. I am proud to have received a gold medal for my performance in this competition."
+  },
+  {
+    category: "National Informatics Competition - 2022",
+    title: "Silver Medalist",
+    src: "/images/informatika-silver.png",
+    content: "I participated in a national-level informatics competition conducted online, resembling an Olympiad format. In this competition, I engaged in answering questions related to computer knowledge, mathematics, and programming logic."
+  },
+  {
+    category: "National Informatics Competition - 2022",
+    title: "Bronze Medalist",
+    src: "/images/informatika-bronze.png",
+    content: "I participated in a national-level informatics competition conducted online, resembling an Olympiad format. In this competition, I engaged in answering questions related to computer knowledge, and programming logic."
+  },
+  {
+    category: "National English Competition - 2022",
+    title: "Silver Medalist",
+    src: "/images/english.jpeg",
+    content: "I took part in a national-level English competition held online, similar to an Olympiad format. This competition included sections on listening, reading, and grammar, much like the TOEFL ITP, where I answered various questions related to the English language"
+  },
+  
+];

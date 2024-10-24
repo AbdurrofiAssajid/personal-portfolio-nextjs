@@ -27,23 +27,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <head>
-        <link rel="icon" href="/logo.JPG" sizes="any" />
+        <link rel="icon" href="/icons/logo.JPG" sizes="any" />
       </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 `}
       >
-        <div className="fixed inset-0 -z-10 overflow-hidden">
-          <div className="relative w-full h-full">
-            <Image
-              src="/footer-grid.svg"
-              alt="grid"
-              fill
-              sizes="20vw"
-              style={{
-                objectFit: "cover",
-              }}
-              className="opacity-100 pointer-events-none hidden dark:block"
-            />
+        <div className="fixed inset-0 -z-10 overflow-hidden bg-white dark:bg-[#13162D]">
+  <div className="relative w-full h-full bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-grid-white/[0.2] dark:bg-[#13162D]">
+            
           </div>
           <div className="absolute top-0 inset-x-0 h-screen">
             <div className="bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#13162D]"></div>

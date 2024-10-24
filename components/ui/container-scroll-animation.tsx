@@ -41,7 +41,7 @@ export const ContainerScroll = ({
       className="min-h-[60rem] sm:min-h-screen md:min-h-[80rem] flex flex-col items-center justify-center relative p-2 md:p-20 pt-[8rem]"
       ref={containerRef}
     >
-      <div className="w-full text-center mb-12">
+      <div className="w-full text-center mb-4">
         {titleComponent}
       </div>
       

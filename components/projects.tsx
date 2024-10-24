@@ -4,17 +4,16 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import { Tabs } from "../components/ui/tabs"; 
-import Project from "./project"; // Import komponen Project
+import Project from "./project"; 
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.3);
   
-  // Prepare tabs data from projectsData
   const tabs = projectsData.map((project) => ({
     title: project.title,
-    value: project.title.toLowerCase().replace(/ /g, "-"), // For unique value
-    content: <Project {...project} />, // Using Project component
+    value: project.title.toLowerCase().replace(/ /g, "-"), 
+    content: <Project {...project} />, 
   }));
 
   return (

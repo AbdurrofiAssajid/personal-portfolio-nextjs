@@ -29,7 +29,7 @@ export default function Skills() {
       <section
         id="skills"
         ref={ref}
-        className="max-w-[53rem] scroll-mt-40 text-center sm:mb-40 mt-80"
+        className="max-w-[53rem] scroll-mt-40 text-center mt-80"
       >
         <SectionHeading>My skills</SectionHeading>
         <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 dark:font-bold">

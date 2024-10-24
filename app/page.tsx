@@ -1,4 +1,4 @@
-import About from '@/components/about'
+import Achievements from '@/components/achievements'
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
@@ -13,7 +13,7 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <Intro />
         <SectionDivider/>
-        <About />
+        <Achievements/>
         <Projects />
         <Skills/>
         <Outlooks />
