@@ -20,16 +20,16 @@ interface VortexProps {
 export const Vortex = (props: VortexProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef(null);
-  const particleCount = props.particleCount || 700;
+  const particleCount = props.particleCount || 500;
   const particlePropCount = 9;
   const particlePropsLength = particleCount * particlePropCount;
-  const rangeY = props.rangeY || 100;
+  const rangeY = props.rangeY || 80;
   const baseTTL = 50;
   const rangeTTL = 150;
-  const baseSpeed = props.baseSpeed || 0.0;
-  const rangeSpeed = props.rangeSpeed || 1.5;
-  const baseRadius = props.baseRadius || 1;
-  const rangeRadius = props.rangeRadius || 2;
+  const baseSpeed = props.baseSpeed || 0.1;
+  const rangeSpeed = props.rangeSpeed || 0.8;
+  const baseRadius = props.baseRadius || 0.5;
+  const rangeRadius = props.rangeRadius || 1.5;
   const baseHue = props.baseHue || 220;
   const rangeHue = 100;
   const noiseSteps = 3;
@@ -37,6 +37,8 @@ export const Vortex = (props: VortexProps) => {
   const yOff = 0.00125;
   const zOff = 0.0005;
   const backgroundColor = props.backgroundColor || "#000000";
+const maxSpeed = 1.5;
+
   let tick = 0;
   const noise3D = createNoise3D();
   let particleProps = new Float32Array(particlePropsLength);
@@ -85,7 +87,7 @@ export const Vortex = (props: VortexProps) => {
     let x, y, vx, vy, life, ttl, speed, radius, hue;
 
     x = rand(canvas.width);
-    y = center[1] + randRange(rangeY);
+    y = center[1] + randRange(rangeY * 0.5);
     vx = 0;
     vy = 0;
     life = 0;
@@ -182,7 +184,13 @@ export const Vortex = (props: VortexProps) => {
   };
 
   const checkBounds = (x: number, y: number, canvas: HTMLCanvasElement) => {
-    return x > canvas.width || x < 0 || y > canvas.height || y < 0;
+    const margin = 50;
+    return (
+      x > canvas.width + margin ||
+      x < -margin ||
+      y > canvas.height + margin ||
+      y < -margin
+    );
   };
 
   const resize = (

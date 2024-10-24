@@ -77,18 +77,15 @@ export default function Intro() {
                   containerClassName="relative max-w-[45rem] mx-auto"
                   particleCount={300}
                   rangeY={50}
-                  baseHue={250}
+                  baseHue={220}
                   baseSpeed={0.5}
                   rangeSpeed={0.8}
                   baseRadius={1.2}
                   rangeRadius={0.8}
                 >
                   <div className="flex justify-center items-center min-h-screen lg:mt-0">
-                    <motion.section
+                    <section
                       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
-                      initial={{ opacity: 0, y: 100 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.175 }}
                     >
                       <h1 className="font-bold text-3xl mb-6"> - About Me - </h1>
                       <p className="mb-3">
@@ -124,7 +121,7 @@ export default function Intro() {
                         </span>
                         .
                       </p>
-                    </motion.section>
+                    </section>
                   </div>
                 </Vortex>
               </ModalContent>
