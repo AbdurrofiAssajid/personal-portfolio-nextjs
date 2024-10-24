@@ -77,7 +77,7 @@ export default function Intro() {
                   containerClassName="relative max-w-[45rem] mx-auto"
                   particleCount={300}
                   rangeY={50}
-                  baseHue={220}
+                  baseHue={250}
                   baseSpeed={0.5}
                   rangeSpeed={0.8}
                   baseRadius={1.2}
