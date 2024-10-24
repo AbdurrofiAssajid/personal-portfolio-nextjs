@@ -73,7 +73,7 @@ export const experiencesData = [
     title: "PIC Frontend Division",
     month: "October-Now",
     description:
-      "As the PIC(Person In Charge) for the front-end team in this e-learning project, I manage and lead our efforts in developing user-friendly interfaces. I work closely with my team to enhance the overall learning experience, creating a platform that is both visually appealing and easy to navigate.",
+      "As the PIC(Person In Charge) for the front-end team in an e-learning project, I manage and lead my team in developing user-friendly interfaces. I work closely with my team to enhance the overall learning experience, creating a platform that is both visually appealing and easy to navigate.",
     icon: React.createElement(FaUserTie),
     date: "2024 - now",
   },
@@ -214,7 +214,7 @@ export const achievementData: AchievementCard[] = [
   {
     category: "National Informatics Competition - 2023",
     title: "Gold Medalist",
-    src: "/images/informatics-gold.png",
+    src: "/images/Informatics-gold.png",
     content: "I participated in a national-level online informatics competition, structured like an Olympiad, where I answered questions on computer science, mathematics, and programming logic. I am proud to have received a gold medal for my performance in this competition."
   },
   {
